@@ -3,93 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Registration Form - Cerevex Developments</title>
+  <title>Cerevex Developments - 10 Days Camp Registration</title>
   <style>
     body {
-      background-color: #e6f0ff;
       font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
       margin: 0;
       padding: 20px;
     }
-    .container {
-      background: white;
-      padding: 30px;
-      max-width: 500px;
-      margin: 40px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
+    header {
+      background-color: #00acc1;
+      color: white;
+      padding: 15px 0;
       text-align: center;
-      color: #333;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      margin-top: 10px;
+      font-size: 24px;
       font-weight: bold;
     }
+    form {
+      background: white;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
     input, textarea, button {
-      padding: 10px;
-      margin-top: 5px;
+      width: 100%;
+      margin-top: 15px;
+      padding: 12px;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-size: 16px;
     }
     button {
-      background-color: #007BFF;
+      background-color: #00acc1;
       color: white;
-      margin-top: 20px;
+      font-weight: bold;
+      border: none;
       cursor: pointer;
     }
     button:hover {
-      background-color: #0056b3;
+      background-color: #008b9a;
+    }
+    .note {
+      font-size: 14px;
+      color: red;
+      margin-top: 10px;
     }
     .terms {
       font-size: 12px;
-      margin-top: 15px;
-      color: #666;
-    }
-    .upi-section {
-      margin-top: 30px;
-      text-align: center;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>Cerevex Developments</h1>
-  <h2>10 Days Camp Registration</h2>
+<header>Cerevex Developments</header>
 
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <label>Full Name:</label>
-    <input type="text" name="Name" required>
+<h2 style="text-align:center;">🔔 Register for 10 Days Online Camp</h2>
 
-    <label>Email:</label>
-    <input type="email" name="Email" required>
+<form action="https://formsubmit.co/cerevex69@gmail.com" method="POST">
+  
+  <input type="text" name="name" placeholder="Full Name" required>
+  
+  <input type="email" name="email" placeholder="Email Address" required>
+  
+  <input type="text" name="phone" placeholder="Phone Number" required>
+  
+  <textarea name="message" placeholder="Why do you want to join this camp?" rows="4" required></textarea>
+  
+  <div class="note">Registration Fee: ₹299 (Pay after form submission)</div>
 
-    <label>Phone Number:</label>
-    <input type="tel" name="Phone" required>
+  <input type="hidden" name="_captcha" value="false">
+  
+  <input type="hidden" name="_next" value="https://yourpaymentpage.com">
 
-    <label>Address:</label>
-    <textarea name="Address" rows="3" required></textarea>
-
-    <div class="terms">
-      By registering, you agree to our Terms and Conditions.  
-      <br><br>
-      Registration Fee: ₹299 (Non-refundable)
-    </div>
-
-    <button type="submit">Register Now</button>
-  </form>
-
-  <div class="upi-section">
-    <h3>Pay Registration Fee</h3>
-    <p>Scan QR or Pay to UPI ID: <b>6269028788@paytm</b></p>
-    <img src="YOUR_QR_IMAGE_LINK" alt="Scan QR to Pay" width="200">
+  <button type="submit">Register Now</button>
+  
+  <div class="terms">
+    By registering, you agree to our <a href="#terms" style="color:#00acc1;">Terms & Conditions</a>.
   </div>
+</form>
+
+<!-- Terms and Conditions Section -->
+<div id="terms" style="max-width:600px; margin:50px auto; background:white; padding:20px; border-radius:10px;">
+  <h3>📜 Terms & Conditions:</h3>
+  <ul>
+    <li>Registration is non-refundable once payment is made.</li>
+    <li>Payment must be completed after form submission to confirm your seat.</li>
+    <li>Classes will be held online; internet connection is required.</li>
+    <li>Sharing of class materials is strictly prohibited.</li>
+    <li>Cerevex Developments reserves the right to remove any participant for misconduct without refund.</li>
+  </ul>
 </div>
 
 </body>
