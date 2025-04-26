@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form - Cerevex Developments</title>
+  <style>
+    body {
+      background-color: #e6f0ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      max-width: 500px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea, button {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .terms {
+      font-size: 12px;
+      margin-top: 15px;
+      color: #666;
+    }
+    .upi-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Cerevex Developments</h1>
+  <h2>10 Days Camp Registration</h2>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label>Full Name:</label>
+    <input type="text" name="Name" required>
+
+    <label>Email:</label>
+    <input type="email" name="Email" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="Phone" required>
+
+    <label>Address:</label>
+    <textarea name="Address" rows="3" required></textarea>
+
+    <div class="terms">
+      By registering, you agree to our Terms and Conditions.  
+      <br><br>
+      Registration Fee: ₹299 (Non-refundable)
+    </div>
+
+    <button type="submit">Register Now</button>
+  </form>
+
+  <div class="upi-section">
+    <h3>Pay Registration Fee</h3>
+    <p>Scan QR or Pay to UPI ID: <b>6269028788@paytm</b></p>
+    <img src="YOUR_QR_IMAGE_LINK" alt="Scan QR to Pay" width="200">
+  </div>
+</div>
+
+</body>
+</html>
